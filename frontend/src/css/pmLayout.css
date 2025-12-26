@@ -1,0 +1,26 @@
+.pm-layout {
+  display: flex;
+}
+
+.pm-content {
+  flex: 1;
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+.pm-header {
+  background: white;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.pm-body {
+  padding: 20px;
+}
+
+.pm-footer {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+}

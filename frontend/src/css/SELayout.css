@@ -1,0 +1,235 @@
+/* Main layout */
+.se-layout {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+}
+
+
+.sidebar {
+  width: 260px;
+  background-color: #0f172a; 
+  color: #e2e8f0; 
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sidebar-header h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #38bdf8; 
+}
+
+/* Sidebar navigation */
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 18px;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #cbd5e1; 
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.sidebar-nav a:hover {
+  background-color: #1e293b; 
+  color: #38bdf8; 
+}
+
+.nav-icon {
+  margin-right: 12px;
+  font-size: 1.2rem;
+}
+
+/* Active link */
+.active-link {
+  background-color: #1e293b;
+  color: #38bdf8;
+  font-weight: 500;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 35px;
+  overflow-y: auto;
+}
+/* Dashboard Page */
+.se-dashboard {
+  padding: 30px;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 250px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  margin: 5px 0 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Card colors */
+.total-tasks {
+  background-color: #3b82f6; 
+}
+
+.pending-tasks {
+  background-color: #facc15; 
+  color: #0f172a; 
+}
+
+.completed-tasks {
+  background-color: #16a34a; 
+}
+
+/* ===== Dashboard Layout ===== */
+.se-dashboard {
+  padding: 30px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2f3542;
+  margin-bottom: 25px;
+}
+
+/* ===== Cards Layout ===== */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Base Card Style */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid transparent;
+}
+
+/* Icons */
+.card-icon {
+  font-size: 28px;
+  opacity: 0.9;
+}
+
+.card-content h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c757d;
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2f3542;
+}
+
+/* ===== Card Variants ===== */
+.total-tasks {
+  border-left-color: #1f3a5f;
+}
+
+.total-tasks .card-icon {
+  color: #1f3a5f;
+}
+
+.pending-tasks {
+  border-left-color: #c77d00;
+}
+
+.pending-tasks .card-icon {
+  color: #c77d00;
+}
+
+.in-progress-tasks {
+  border-left-color: #5a4fcf;
+}
+
+.in-progress-tasks .card-icon {
+  color: #5a4fcf;
+}
+
+.completed-tasks {
+  border-left-color: #2d7d46;
+}
+
+.completed-tasks .card-icon {
+  color: #2d7d46;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #dfe6e9;
+  width: 100%;
+  text-align: left;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}

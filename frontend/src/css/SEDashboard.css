@@ -1,0 +1,83 @@
+.se-dashboard {
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+}
+
+/* Header */
+.se-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.se-header h2 {
+  margin: 0;
+}
+
+.se-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+/* Cards */
+.se-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.se-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.se-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.se-card p {
+  margin: 5px 0 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.se-icon {
+  font-size: 32px;
+  color: #3498db;
+}
+
+/* Content */
+.se-content {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.se-content h3 {
+  margin-top: 0;
+}
+
+.se-note {
+  margin-top: 15px;
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.se-note ul {
+  margin: 8px 0 0 18px;
+}
